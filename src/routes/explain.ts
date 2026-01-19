@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const router = Router();
 
 // Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyCKOyiZcpGK2s5A8n7HVjJfZBCx3x-t-ao');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
 // System prompt (fixed)
